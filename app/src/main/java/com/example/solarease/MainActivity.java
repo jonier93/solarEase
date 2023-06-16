@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         // Obtener día del año actual
         int diaDelAnio = LocalDate.now().getDayOfYear();
 
-        // Calcular ángulo de incidencia de radiación solar
+        // Calcular ángulo de incidencia de la radiación solar
         double anguloIncidencia = Math.acos(Math.sin(latitudRad) * Math.sin(inclinacionRad) + Math.cos(latitudRad) * Math.cos(inclinacionRad) * Math.cos(longitudRad));
 
         // Calcular radiación solar incidente
