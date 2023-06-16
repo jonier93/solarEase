@@ -65,8 +65,8 @@ public class MainActivity extends AppCompatActivity {
         double constanteSolar = 0.1367; // kWh/m²
         double radiacion = constanteSolar * Math.cos(anguloIncidencia) * (1 + 0.033 * Math.cos(Math.toRadians(360 * diaDelAnio / 365.0)));
 
-        // Calcular producción de energía
-        double areaPanel = area / 10000.0; // convertir a m²
+        // Calcular producción de energíag
+        double areaPanel = area / 10000.0; // convertir unidades a m²
         double eficienciaPanel = 0.16; // 16% de eficiencia
         double factorPerdidas = 0.9; // pérdida del 10%
         double produccionEnergia = areaPanel * radiacion * eficienciaPanel * factorPerdidas;
